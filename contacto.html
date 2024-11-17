@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="Logo de la página" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="acerca.html" class="">Acerca</a></li>
+                    <li><a href="tienda.html" class="">Tienda</a></li>
+                    <li><a href="artista.html" class="active">Artistas</a></li>
+                    <li><a href="eventos.html">Eventos</a></li> 
+                    <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <body>
+        <div class="container-form">
+            <div class="info-form">
+                <h2>¿Quieres ser parte de la galería?</h2>
+                <h2>¡Contáctanos!</h2>
+                <p>¿Eres un artista local o independiente? ¡Nos encantaría tenerte en Galería Esencia! Contáctanos y forma parte de nuestra próxima exposición mensual. Únete a nuestra comunidad y muestra tu obra a un público apasionado por el arte. ¡Esperamos tu mensaje!</p>
+               
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Nombre Completo" class="campo" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" class="campo" required>
+                <textarea name="mensaje" placeholder="Mensaje..." required></textarea>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </body>
+    
+
+    <footer>
+        ‎ 
+        <p><strong>Información: </strong></p>
+        <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+        <p>Teléfono: 097 327 451 / 22229087</p>
+        <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+        <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+    <p>‎ </p>
+    <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+  
+    </footer>
+    
+    <script>
+      
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+       
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+          
+            const form = document.getElementById("info-form");
+            
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                        
+                alert("Muchas gracias, nos pondremos en contacto brevemente contigo.");
+            
+                form.reset();
+            });
+        });
+
+    </script>
+
+    
+</body>
+</html>

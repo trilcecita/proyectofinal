@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="Logo de la página" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="artista.html">Artistas</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li> 
+                    <li><a href="eventos.html">Eventos</a></li> 
+
+                    <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <main>
+        <section class="about-carousel-section">
+            <div class="about-container">
+                <h2>Acerca de Galería Esencia</h2>
+                <p>
+                    En Galería Esencia celebramos el talento de artistas locales y emergentes, ofreciendo un espacio digital donde el arte encuentra su esencia y conexión con el público. Nuestra misión es destacar la autenticidad y creatividad de cada artista, brindando una plataforma que respeta su identidad y estilo único.
+                </p>
+                <p>
+                    Creemos en el poder transformador del arte y en su capacidad para trascender fronteras. Por eso, en nuestra galería encontrarás obras que combinan innovación y tradición, abarcando diversos estilos que van desde la ilustración digital hasta el arte contemporáneo. Cada artista aquí representado aporta una visión fresca, que refleja tanto su mundo interior como la riqueza cultural de nuestra región.
+                </p>
+                <p>
+                    Explora nuestra galería y descubre la esencia de cada obra y cada artista.
+                </p>
+
+                <a href="artista.html" class="botonartistames">Ver Artista del Mes</a>
+            </div>
+        
+         
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="galeria1.png" alt="Obra de arte 1">
+                        <img src="galeria2.png" alt="Obra de arte 2">
+                        <img src="galeria3.png" alt="Obra de arte 3">
+                        <img src="galeria4.png" alt="Obra de arte 4">
+                        
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+    </main>
+
+    
+
+    <footer>
+        ‎ 
+        <p><strong>Información: </strong></p>
+        <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+        <p>Teléfono: 097 327 451 / 22229087</p>
+        <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+        <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+    <p>‎ </p>
+    <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+  
+    </footer>
+
+    <script>
+        
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+      
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+        let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelector('.carousel-images');
+    const totalSlides = slides.children.length;
+
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    const offset = -currentSlide * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+
+    </script>
+</body>
+</html>

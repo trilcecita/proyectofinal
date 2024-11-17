@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="Logo de la página" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>  
+                    <li><a href="eventos.html">Eventos</a></li>             
+                    <li><a href="contacto.html">Contacto</a></li> 
+
+                    <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <main>
+        <section class="biografia">
+            <div class="biografia-contenedor">
+                <div class="biografia-imagen">
+                    <img src="popi.png" alt="Foto de la persona" />
+                </div>
+                <div class="biografia-texto">
+                    <h2>Sofía Aguerre / Popillunes</h2>
+                    <p>
+                        Sofía Aguerre, conocida artísticamente como Popillunes, es una destacada artista digital uruguaya. Su obra fusiona elementos del anime contemporáneo con un estilo personal distintivo, caracterizándose por una vibrante paleta de colores pastel y un excepcional manejo de la iluminación digital. Sus creaciones, que combinan nostalgia y modernidad, han desarrollado un lenguaje visual único que la posiciona como una voz singular en la escena del arte digital latinoamericano.
+                    </p>
+                    <p>‎ </p>
+                    <p>Para conocer más sobre la artista y ver sus obras:</p>
+                    <p>‎ </p>
+                    <a href="https://www.instagram.com/popillunes/" target="_blank">
+                        <button class="instagram-btn">Instagram</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="obras">
+            <h3>Obras destacadas</h3>
+            <div class="obras-horizontal">
+                <img src="obra1 (1).jpeg" alt="Obra 1">
+                <img src="obra1 (2).jpeg" alt="Obra 2">
+                <img src="obra1 (3).jpeg" alt="Obra 3">
+                <img src="obra1 (4).jpeg" alt="Obra 4">
+            </div>
+        </section>
+        
+        
+   
+
+    </main>
+
+    <footer>
+        ‎ 
+        <p><strong>Información: </strong></p>
+        <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+        <p>Teléfono: 097 327 451 / 22229087</p>
+        <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+        <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+    <p>‎ </p>
+    <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+  
+    </footer>
+
+    <script>
+    
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+    </script>
+</body>
+</html>

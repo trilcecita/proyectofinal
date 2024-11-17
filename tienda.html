@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="Logo de la página" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                  <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="artista.html">Artistas</a></li> 
+                    <li><a href="eventos.html">Eventos</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li> 
+
+                     <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+    <main>
+       
+
+        <section>
+            <section class="columnastienda">
+                <article>
+                    <img src="manzana.png.png" alt="Poster con marco" width="300">
+                    <h2>Poster con marco</h2>
+                    <p>Poster de tela con marco de madera y colgante para la pared, diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$490</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito" id="icono-carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="taza.png" alt="Poster con marco" width="300">
+                    <h2>Taza de cerámica.</h2>
+                    <p>Taza de ceramica blanca o negra con diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$250</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="libro.png" alt="Poster con marco" width="300">
+                    <h2>Cuaderno anillado.</h2>
+                    <p>Cuaderno anillado de 100 hojas rayadas o lisas, diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$300</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="funda.png" alt="Poster con marco" width="300">
+                    <h2>Carcasa teléfono.</h2>
+                    <p>Carcasa de plástico doble resistente para cualquier modelo de teléfono, diseño a elegir.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$430</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="mousepad.png" alt="Poster con marco" width="300">
+                    <h2>Mousepad</h2>
+                    <p>Mousepad de 20x30 cm, diseño a elección según stock. </p>
+                    <div class="precio-carrito">
+                        <p class="precio">$260</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="vidrio,png.png" alt="Poster con marco" width="300">
+                    <h2>Poster con vidrio.</h2>
+                    <p>Poster para colgar con vidrio y clip colgante, diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$550</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="cuaderno.png" alt="Poster con marco" width="300">
+                    <h2>Cuaderno con elástico.</h2>
+                    <p>Cuaderno negro de 100 hojas rayadas con elástico, diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$320</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="bolso.png" alt="Poster con marco" width="300">
+                    <h2>Bolsa de tela.</h2>
+                    <p>Bolsa de tela blanca tamaño mediana con cinta negra, diseño a elección según stock.</p>
+                    <div class="precio-carrito">
+                        <p class="precio">$400</p>
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="pin.png" alt="Poster con marco" width="300">
+                    <h2>Pin.</h2>
+                    <p>Pin de metal con clip, diseño a elección. Precio de unidad. </p>
+                    <div class="precio-carrito">
+                        <p class="precio"> $80</p> 
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="pins.png" alt="Poster con marco" width="300">
+                    <h2>Pins x5.</h2>
+                    <p>Pins de metal con clip, set completo de cinco. </p>
+                    <div class="precio-carrito">
+                        <p class="precio"> $350</p> 
+                        <button class="btn-carrito" onclick="agregarAlCarrito(this)">
+                            <img src="shopblanco.png" alt="Añadir al carrito">
+                        </button>
+                    </div>
+                </article>
+  
+                </section>
+
+       
+         </main>
+
+         <footer>
+            ‎ 
+            <p><strong>Información: </strong></p>
+            <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+            <p>Teléfono: 097 327 451 / 22229087</p>
+            <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+            <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+        <p>‎ </p>
+        <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+      
+        </footer>
+    
+    <script>
+       
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+      
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+        function agregarAlCarrito(boton) {
+    const imagenIcono = boton.querySelector("img");
+    const iconoOriginal = imagenIcono.src;
+
+    imagenIcono.src = "tick.png";
+    imagenIcono.alt = "Producto añadido al carrito";
+
+    boton.style.backgroundColor = "#0E6CAB";
+    boton.disabled = true;
+
+    setTimeout(() => {
+        imagenIcono.src = iconoOriginal;
+        imagenIcono.alt = "Añadir al carrito";
+        boton.style.backgroundColor = "#939994";
+        boton.disabled = false;
+    }, 2000);
+}
+
+
+
+
+    </script>
+</body>
+</html>

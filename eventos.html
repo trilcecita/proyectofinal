@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="index.html" id="logo">
+                <img src="logo.png" alt="Logo de la página" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="artista.html">Artistas</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li> 
+
+                    <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="seccionevento">
+            <div class="grid-eventos">
+         
+              <div class="contenedor-evento">
+                <div class="imagen-evento">
+                  <img src="curso1.png" alt="Evento 1" />
+                </div>
+                <div class="info-evento">
+                  <h2>Curso de pintura rápida.</h2>
+                  <p>Curso para aprender técnicas rápidas de pintura, enfocado en capturar la esencia de un tema o paisaje de manera eficiente.</p>
+                  <ul>
+                    <li><strong>Fecha:</strong> 20 de noviembre de 2024</li>
+                    <li><strong>Hora:</strong> 16:00 - 19:00</li>
+                    <li><strong>Ubicación:</strong> Aula Taller, espacio interactivo.</li>
+
+                  </ul>
+                  <button class="btn-detalles" onclick="alternarDetalles(this)">Ver más detalles</button>
+                </div>
+                <div class="detalles-evento">
+                    <p> Este curso tiene como objetivo enseñar a los participantes cómo realizar obras de pintura rápida en un corto período de tiempo, utilizando técnicas ágiles para capturar la esencia de un paisaje, una escena urbana o incluso un retrato. Los estudiantes aprenderán a trabajar con diferentes medios, como acuarelas, acrílicos o lápices, y se les animará a crear obras que reflejen su estilo personal y su interpretación única de un sujeto. El enfoque será en la rapidez, la precisión y la expresión directa, sin perder la calidad artística.</p>
+                    
+                </div>
+              </div>
+          
+            
+              <div class="contenedor-evento">
+                <div class="imagen-evento">
+                  <img src="feria.png" alt="Evento 2" />
+                </div>
+                <div class="info-evento">
+                  <h2>Feria de Arte Independiente: "Indie Art Fair"</h2>
+                  <p>Una feria que reúne a artistas independientes y emergentes de diversas disciplinas, desde pintura hasta arte digital, fotografía y escultura. </p>
+                  <ul>
+                    <li><strong>Fecha:</strong>14 y 15 de diciembre de 2024</li>
+                    <li><strong>Hora:</strong> 12:00 - 20:00</li>
+                    <li><strong>Ubicación:</strong> Espacio central y Patio de la Galería. </li>
+                  </ul>
+                  <button class="btn-detalles" onclick="alternarDetalles(this)">Ver más detalles</button>
+                </div>
+                <div class="detalles-evento">
+                  <p>Los artistas tendrán puestos para mostrar y vender sus obras, mientras que los visitantes podrán interactuar directamente con los creadores. Además, habrá actividades como exposiciones en vivo, presentaciones musicales, y proyecciones de arte experimental. Esta feria busca dar visibilidad a artistas que no están representados por galerías comerciales.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+</section>
+
+<section class="seccionevento">
+    <div class="grid-eventos">
+
+      <div class="contenedor-evento">
+        <div class="imagen-evento">
+          <img src="foto.png" alt="Evento 1" />
+        </div>
+        <div class="info-evento">
+          <h2>Taller fotografía.</h2>
+          <p>Taller práctico sobre técnicas de fotografía experimental.</p>
+          <ul>
+            <li><strong>Fecha:</strong> 28 de noviembre de 2024</li>
+            <li><strong>Hora:</strong> 10:00 - 15:00</li>
+            <li><strong>Ubicación:</strong> Taller planta baja.</li>
+          </ul>
+          <button class="btn-detalles" onclick="alternarDetalles(this)">Ver más detalles</button>
+        </div>
+        <div class="detalles-evento">
+          <p>Un curso interactivo que enseñará a los participantes técnicas no convencionales de fotografía, como exposiciones largas, experimentación con cámaras estenopeicas, y manipulación de negativos. Los asistentes aprenderán a capturar imágenes únicas, utilizando métodos alternativos que desafían las normas tradicionales de la fotografía.</p>
+        </div>
+      </div>
+  
+      
+      <div class="contenedor-evento">
+        <div class="imagen-evento">
+          <img src="charla.png" alt="Evento 2" />
+        </div>
+        <div class="info-evento">
+          <h2>Exposición Colectiva: "Nuevas Voces del Arte Independiente"</h2>
+          <p>Una exposición que presenta a artistas emergentes y del arte independiente.</p>
+          <ul>
+            <li><strong>Fecha:</strong> 7 y 8, 14 y 15, 28 y 29 de diciembre de 2024. </li>
+            <li><strong>Hora:</strong> 10:00 - 14:00</li>
+            <li><strong>Ubicación:</strong> Auditorio Principal.</li>
+          </ul>
+          <button class="btn-detalles" onclick="alternarDetalles(this)">Ver más detalles</button>
+        </div>
+        <div class="detalles-evento">
+          <p>"Nuevas Voces del Arte Independiente" es una exposición colectiva diseñada para dar visibilidad a artistas emergentes que están redefiniendo el panorama del arte contemporáneo. La muestra reúne obras que desafían las convenciones tradicionales y adoptan un enfoque experimental e innovador en su forma y contenido. Estos artistas, provenientes de diferentes disciplinas, reflejan un espíritu independiente y buscan conectar con el público a través de expresiones únicas y disruptivas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</section>
+
+          
+          
+
+
+    </main>
+
+    <footer>
+        ‎ 
+        <p><strong>Información: </strong></p>
+        <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+        <p>Teléfono: 097 327 451 / 22229087</p>
+        <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+        <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+    <p>‎ </p>
+    <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+  
+    </footer>
+
+    <script>
+     
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+      
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+        let currentSlide = 0;
+
+        function alternarDetalles(boton) {
+  
+  const contenedor = boton.closest(".contenedor-evento");
+
+  
+  const detalles = contenedor.querySelector(".detalles-evento");
+
+  detalles.classList.toggle("active");
+
+  const todasSecciones = document.querySelectorAll(".detalles-evento.active");
+  todasSecciones.forEach((seccion) => {
+    if (seccion !== detalles) {
+      seccion.classList.remove("active");
+    }
+  });
+}
+
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Esencia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="shadow"></div>
+        <div class="container">
+            <a href="#" id="logo">
+                <img src="logo.png" alt="logo" width="220">
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="artista.html">Artistas</a></li> 
+                    <li><a href="eventos.html">Eventos</a></li> 
+                    <li><a href="contacto.html">Contacto</a></li> 
+                    
+                  
+                    <li><img src="shop.png" alt="" width="20"></li>
+                    <li><div class="dark-btn"></div></li>
+                 
+                </ul>
+            </nav>
+
+            <span class="burger-ico">&#9776;</span>
+        </div>
+
+        <div class="loader">
+            <img src="arte.png" alt="">
+                <path fill="#3498db" d="M12 2a1 1 0 110 2A8 8 0 104 12a1 1 0 11-2 0A10 10 0 1112 2z">
+                    <animateTransform 
+                        attributeName="transform" 
+                        type="rotate" 
+                        from="0 12 12" 
+                        to="360 12 12" 
+                        dur="2s"  />
+                </path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <section id="hero">
+
+            <img src="g.png" alt="galeria">-
+         
+                <div class="hero-fill">
+                    <div class="hero-text">
+                        <h1>Galería Esencia</h1>
+                        <p>Galería Esencia es un espacio indie dedicado a impulsar a los artistas locales, brindándoles un escenario para exhibir sus obras y conectar con el público. Aquí, cada exposición es una muestra auténtica del talento y la creatividad que define nuestra comunidad. ¡Descubre lo mejor del arte independiente en Esencia!</p>
+                        <a href="acerca.html"><button class="btn btn-blanco">Sobre Nosotros</button></a>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="colums container">
+            <article>
+                <img src="calendar_month_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" style="height: 24%;">  
+                <h2>Eventos</h2>
+                <p>En Galería Esencia organizamos eventos mensuales, como conferencias, charlas, exposiciones y talleres, para fomentar el arte local y la interacción con los artistas. ¡Descubre y participa en nuestras actividades!</p>
+                    <a href="eventos.html"><button class="btn btn-blanco">Más info</button></a>
+               
+            </article>
+            <article>
+                <img src="artistas.png" alt="" style="height: 24%;">       
+                <h2>Artistas</h2>
+                <p>En Galería Esencia, cada mes presentamos a nuevos artistas locales que comparten su talento y creatividad. Este noviembre, descubre las obras de nuestros artistas del mes y conoce su propuesta única. ¡No te lo pierdas!</p>
+                    <a href="artista.html"><button class="btn btn-blanco">Más info</button></a>
+            </article>  
+           
+
+        </section>
+
+        <section class="colums container">
+            <article>
+                <img src="tienda.png" alt="" style="height: 24%;">  
+                <h2>Tienda</h2>
+                <p>En nuestra tienda encontrarás colecciones únicas creadas por los artistas que forman parte de nuestras exposiciones. Cada mes, presentamos una selección exclusiva de merchandising que incluye prints, playeras, accesorios y más, todo inspirado en las obras y estilos de los artistas. Estas piezas no solo te permiten llevar el arte contigo, sino que también apoyan directamente a los creadores independientes.</p>
+                    <a href="tienda.html"><button class="btn btn-blanco">Más info</button></a>
+               
+            </article>
+          
+           
+
+        </section>
+        <p>‎ </p>
+
+       
+
+    </main>
+
+    <footer>
+        <p><strong>Información: </strong></p>
+        <p>‎ </p>
+        <p>Dirección: Pocitos, Av Brasil 897, Montevideo, Uruguay.</p>
+        <p>Teléfono: 097 327 451 / 22229087</p>
+        <p>Correo Electrónico: <a href="mailto:galeriaesencia@gmail.com">galeriaesencia@gmail.com</a></p>
+        <p>&copy; 2024 Galería de Arte. Todos los derechos reservados.</p>
+    <p>‎ </p>
+    <p>Ignacio Rodriguez y Trilce García 2BB.</p>
+
+  
+    
+    
+    
+    <script>
+        
+        let nav = document.querySelector('nav');
+        let burguerIco = document.querySelector('.burger-ico');
+        let shadow = document.querySelector('.shadow');
+
+        let menuToggle = () => {
+
+            nav.classList.toggle('show-menu');
+            burguerIco.classList.toggle('burger-active');
+            shadow.classList.toggle('shadow-active');
+
+        };
+
+        burguerIco.addEventListener('click', menuToggle);
+        shadow.addEventListener('click', menuToggle);
+
+        
+        let darkBtn = document.querySelector('.dark-btn');
+        let body = document.body;
+
+        darkBtn.addEventListener('click', () => {
+
+            body.classList.toggle('dark-mode');
+            darkBtn.classList.toggle('dark-btn-active')
+ 
+        });
+
+        window.onload = () => {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+                loader.classList.add('loader-hidden');
+            }, 2000);
+        };
+
+    </script>
+</body>
+</html>
+
